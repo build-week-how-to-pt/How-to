@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+.home {
+  width: 1000px;
+  margin: 0 auto;
+}
+body {
+  background-color: whitesmoke;
+}
+.home .top-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.home .top-home h1 {
+  padding: 15px 25px;
+  background-color: hotpink;
+  border-radius: 10px;
+  color: white;
+  font-family: cursive;
+}
+.home .top-home nav a {
+  margin: 0 5px 0 20px;
+  font-size: 2rem;
+  font-family: cursive;
+}
+.home .top-main {
+  background-color: white;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+.home .top-main .top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.home .top-main .top-content p {
+  width: 36%;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+.home .top-main .top-content p span {
+  font-size: 3rem;
+  font-family: cursive;
+}
+.home .top-main .top-content button {
+  font-size: 3rem;
+  padding: 25px 40px;
+  height: 0%;
+  border-radius: 10px;
+  background-color: mediumblue;
+  color: white;
+}
+.home .mid-content {
+  display: flex;
+  margin: 0 auto;
+}
+.home .mid-content .trending {
+  margin: 0 15px;
+}
+.home .mid-content .trending img {
+  width: 100%;
+  border-radius: 7px;
+}
+.home .mid-content .trending p {
+  font-size: 2rem;
+}
