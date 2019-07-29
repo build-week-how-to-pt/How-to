@@ -175,6 +175,14 @@ br {
   align-items: center;
   padding: 50px 0 0 50px;
 }
+@media (max-width: 500px) {
+  .nav-bar .nav-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .nav-bar .nav-container .logo {
   color: white;
   background-color: #ff4486;
@@ -183,9 +191,17 @@ br {
   font-family: 'Oleo Script', serif;
   display: inline-block;
   vertical-align: middle;
+  position: relative;
   padding: 0.25em 0.2em 0.25em 0.2em;
 }
-.nav-bar .nav-container nav {
+@media (max-width: 500px) {
+  .nav-bar .nav-container .logo {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+}
+.nav-bar nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,15 +214,21 @@ br {
   border-radius: 6px;
   padding: 0.5em 1em 0.5em 1em;
 }
-.nav-bar .nav-container nav nav:hover {
+.nav-bar nav:hover {
   background-color: white;
 }
-.nav-bar .nav-container nav a {
+.nav-bar a {
   text-decoration: none;
   color: #b7c3c7;
   font-size: 2.5rem;
   width: 200px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .nav-bar a {
+    font-size: 2rem;
+    width: 100%;
+  }
 }
 footer {
   background: #e9e9e9;
@@ -242,8 +264,24 @@ footer {
     justify-content: space-between;
   }
 }
+@media (max-width: 800px) {
+  .foot {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .hide {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .hide {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .hides {
     display: none;
   }
 }
@@ -280,6 +318,13 @@ footer {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
 .left {
   padding: 50px 0 0 50px;
   width: 65%;
@@ -287,6 +332,13 @@ footer {
 @media (max-width: 500px) {
   .left {
     width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .left {
+    width: 100%;
+    text-align: center;
   }
 }
 .right {
@@ -294,6 +346,12 @@ footer {
   width: 35%;
 }
 @media (max-width: 500px) {
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
   .right {
     width: 100%;
     text-align: center;
@@ -321,6 +379,16 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .one {
   width: 40em;
   height: 40em;
@@ -340,6 +408,21 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .picFace {
+    display: flex;
+    align-items: center;
+    width: 35em;
+    height: 35em;
+  }
+}
+@media (max-width: 800px) {
+  .picFace {
+    width: 40em;
+    height: 40em;
+    text-align: center;
+  }
 }
 .front {
   background-color: #333;

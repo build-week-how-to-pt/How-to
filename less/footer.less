@@ -31,12 +31,28 @@ footer {
         justify-content: space-between;
         
       }
+
+      @media @tablet {
+        width: 100%;
+    
+      }
     
 }
-.hide {
+ .hide {
     @media @phone {
         display: none;
         
+      }
+
+      @media @tablet {
+        font-size: 1em;
+        width: 100%
+      }
+}
+
+.hides {
+    @media @tablet {
+        display: none;
       }
 }
 
