@@ -13,11 +13,26 @@
             font-family: cursive;
         }
         nav {
+            @media(max-width: 840px) {
+                display: flex;
+                flex-direction: column;
+            }
             
             a{
-                margin: 0 5px 0 20px;
+                margin: 0 5px 0 25px;
                 font-size: 2rem;
                 font-family: cursive;
+                text-decoration: none;
+                color: white;
+                padding: 2px 8px;
+                border-radius: 18px;
+                background-color: lightslategray;
+                &:hover {
+                    opacity: 0.5;
+                }
+                @media(max-width: 840px) {
+                    margin-bottom: 5px;
+                }
             }
         }
     }

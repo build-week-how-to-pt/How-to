@@ -140,16 +140,18 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  font-family: cursive;
 }
 h4 {
   font-size: 2.5rem;
 }
 .home {
-  width: 1000px;
+  width: 62.5%;
   margin: 0 auto;
 }
 body {
-  background-color: whitesmoke;
+  background-color: gainsboro;
+  background-image: url(@{background-img});
 }
 .home .top-home {
   display: flex;
@@ -164,13 +166,45 @@ body {
   color: white;
   font-family: cursive;
 }
+@media (max-width: 840px) {
+  .home .top-home nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .top-home nav a {
-  margin: 0 5px 0 20px;
+  margin: 0 5px 0 25px;
   font-size: 2rem;
   font-family: cursive;
+  text-decoration: none;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 18px;
+  background-color: lightslategray;
+}
+.home .top-home nav a:hover {
+  opacity: 0.5;
+}
+@media (max-width: 840px) {
+  .home .top-home nav a {
+    margin-bottom: 5px;
+  }
+}
+.home footer {
+  background-color: lavenderblush;
+  margin-top: 20px;
+}
+.home footer .bottom-content {
+  margin: 0 20px;
+}
+.home footer h4 {
+  font-family: cursive;
+}
+.home footer address {
+  font-size: 1.6rem;
 }
 .home .top-main {
-  background-color: white;
+  background-color: lavenderblush;
   margin: 30px 0;
   border-radius: 10px;
 }
@@ -195,8 +229,23 @@ body {
   padding: 25px 40px;
   height: 0%;
   border-radius: 10px;
-  background-color: mediumblue;
+  background-color: #0090c5;
   color: white;
+  cursor: pointer;
+}
+.home .top-main .top-content button:hover {
+  opacity: 0.6;
+}
+.home .top-mid {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: lavenderblush;
+  border-radius: 10px;
+}
+.home .top-mid img {
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .home .mid-content {
   display: flex;
@@ -204,11 +253,28 @@ body {
 }
 .home .mid-content .trending {
   margin: 0 15px;
+  background-color: lavenderblush;
+  border-radius: 10px;
 }
 .home .mid-content .trending img {
+  width: 200px;
+  height: 133px;
   width: 100%;
-  border-radius: 7px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.home .mid-content .trending h3 {
+  margin: auto;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .home .mid-content .trending p {
   font-size: 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
