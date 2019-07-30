@@ -191,7 +191,7 @@ body {
   }
 }
 .home footer {
-  background-color: lavenderblush;
+  background-color: white;
   margin-top: 20px;
 }
 .home footer .bottom-content {
@@ -204,19 +204,19 @@ body {
   font-size: 1.6rem;
 }
 .home .top-main {
-  background-color: lavenderblush;
+  background-color: white;
   margin: 30px 0;
   border-radius: 10px;
 }
 .home .top-main .top-content {
   display: flex;
-  justify-content: space-between;
+  flex-flow: column;
   align-items: center;
   width: 90%;
   margin: 0 auto;
 }
 .home .top-main .top-content p {
-  width: 36%;
+  width: 90%;
   margin: 20px 0;
   font-size: 2rem;
 }
@@ -226,35 +226,65 @@ body {
 }
 .home .top-main .top-content button {
   font-size: 3rem;
-  padding: 25px 40px;
-  height: 0%;
-  border-radius: 10px;
+  padding: 15px 25px;
   background-color: #0090c5;
   color: white;
   cursor: pointer;
+  width: 90%;
+  height: 0%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .home .top-main .top-content button:hover {
   opacity: 0.6;
 }
+@media (max-width: 800px) {
+  .home .top-main .top-content button {
+    padding: 15px 25px;
+    background-color: #0090c5;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 90%;
+  }
+}
 .home .top-mid {
   width: 100%;
   margin-bottom: 30px;
-  background-color: lavenderblush;
+  background-color: white;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .top-mid {
+    display: none;
+  }
+}
 .home .top-mid img {
-  width: 30%;
+  width: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .home .mid-content {
   display: flex;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .home .mid-content {
+    display: flex;
+    flex-flow: column;
+  }
+}
 .home .mid-content .trending {
   margin: 0 15px;
-  background-color: lavenderblush;
+  background-color: white;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .home .mid-content .trending {
+    margin: 10px 0;
+  }
 }
 .home .mid-content .trending img {
   width: 200px;
