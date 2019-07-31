@@ -412,11 +412,11 @@ body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a {
 }
 body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
   width: 90%;
-  height: 135px;
+  height: 90%;
 }
 @media screen and (max-width: 1200px) {
   body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
-    height: 110px;
+    height: 80%;
   }
 }
 body .howToContainer .howToFlex .leftColumn .centerText h2 {
