@@ -210,42 +210,70 @@ body {
 }
 .home .top-main .top-content {
   display: flex;
-  flex-flow: column;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .home .top-main .top-content {
+    display: flex;
+    flex-flow: column;
+  }
+}
 .home .top-main .top-content p {
-  width: 90%;
+  width: 45%;
   margin: 20px 0;
-  font-size: 2rem;
+  font-size: 1.55vw;
+}
+@media (max-width: 800px) {
+  .home .top-main .top-content p {
+    width: 90%;
+    font-size: 1.6rem;
+  }
 }
 .home .top-main .top-content p span {
-  font-size: 3rem;
+  font-size: 2.8vw;
   font-family: cursive;
 }
-.home .top-main .top-content button {
-  font-size: 3rem;
+@media (max-width: 800px) {
+  .home .top-main .top-content p span {
+    font-size: 2.3rem;
+  }
+}
+.home .top-main .top-content .btn {
+  display: flex;
+  flex-flow: column;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .home .top-main .top-content .btn {
+    width: 100%;
+  }
+}
+.home .top-main .top-content .btn button {
+  font-size: 3vw;
   padding: 15px 25px;
   background-color: #0090c5;
   color: white;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   height: 0%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.home .top-main .top-content button:hover {
+.home .top-main .top-content .btn button:hover {
   opacity: 0.6;
 }
 @media (max-width: 800px) {
-  .home .top-main .top-content button {
+  .home .top-main .top-content .btn button {
     padding: 15px 25px;
     background-color: #0090c5;
     color: white;
     cursor: pointer;
     font-size: 2rem;
     width: 90%;
+    margin: 5px auto;
   }
 }
 .home .top-mid {
