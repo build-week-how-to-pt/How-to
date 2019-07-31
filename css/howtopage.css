@@ -316,14 +316,17 @@ body .howToContainer {
 body .howToContainer .howToFlex {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: none;
+  align-items: none;
   margin: 0% 5% 0% 5%;
   padding: 5%;
 }
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex {
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
     margin-left: 2.5%;
   }
@@ -336,7 +339,9 @@ body .howToContainer .howToFlex {
 }
 body .howToContainer .howToFlex .leftColumn {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: none;
+  align-items: none;
   width: 35%;
 }
 @media screen and (max-width: 800px) {
@@ -400,6 +405,8 @@ body .howToContainer .howToFlex .leftColumn .centerText {
 body .howToContainer .howToFlex .leftColumn .centerText .howToPictures {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .leftColumn .centerText .howToPictures {
@@ -411,7 +418,7 @@ body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a {
 }
 body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
   width: 90%;
-  height: 90%;
+  height: 16em;
 }
 @media screen and (max-width: 1200px) {
   body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
@@ -431,7 +438,9 @@ body .howToContainer .howToFlex .leftColumn .centerText a {
 }
 body .howToContainer .howToFlex .rightColumn {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  justify-content: none;
+  align-items: none;
   width: 60%;
   margin-top: 1.5%;
 }
