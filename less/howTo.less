@@ -25,21 +25,25 @@ body{
 
 
             .leftColumn{
-                .flexBoxCentered(row wrap,center, center);
+                .flexBoxCentered(row wrap,space-around, center);
                 width: 25%;
+                height: 850px;
                 margin-right: 5%;
                 @media screen and(max-width:800px){
                     width: 85%;
                     margin-right: 0%;
+                    height: 100%;
                 }
                 @media screen and(max-width:600px){
                     margin: 0 auto;
                     width: 75%;
+                    height: 100%;
                 }
 
                 img{
                     margin-top: 5%;
-                    width: 75%;
+                    width: 80%;
+                    height: 25%;
                     border-radius: 25px;
                     @media screen and(max-width:800px){
                         width:100%;
@@ -51,6 +55,7 @@ body{
                 button{
                     margin-top: 2%;
                     margin-bottom: 2%;
+                    height: 7%;
                     width: 75%;
                     font-size: 1.5rem;
                     border-radius: 5px;
@@ -59,13 +64,13 @@ body{
                     background-color:#0090c5; 
                     padding: 2.5%;
                     border: none;
-                    height: 100px;
                     @media screen and(max-width:800px){
-
+                        margin: 7% 0% 7% 0%;
+                        width: 100%;
                     }
                     @media screen and(max-width:600px){
                         margin-left: 0%;
-                        padding:0%;
+                        display: none;
                     }
                 }
                 .centerText{
@@ -89,7 +94,7 @@ body{
                                     width: 90%;
                                     height: 16em;
                                     @media screen and(max-width:1200px){
-                                        height: 80%;
+                                        height: 12em;
                                     }
                                 }
                             }
@@ -120,8 +125,15 @@ body{
                 }
                 
                 h1{
+                    @media screen and(max-width:800px){
+                        text-align: center;
+                        font-size: 4rem;
+                        margin-top: 5%;
+                    }
                     @media screen and(max-width:600px){
                         text-align: center;
+                        font-size: 3rem;
+                        margin-top: 5%;
                     }
                     color:#444;
                 }
@@ -130,7 +142,7 @@ body{
                     line-height: 4rem;
                     margin: 3% 0 0% 0%;
                     @media screen and(max-width:600px){
-                        font-size: 1rem;
+                        font-size: 1.6rem;
                     }
                     .boldFont{
                         font-weight:bold;
@@ -141,6 +153,7 @@ body{
                     margin: 4% 0% 2% 0%;
                     @media screen and(max-width:600px){
                         text-align: center;
+                        font-size: 3rem;
                     }
                 }
             }

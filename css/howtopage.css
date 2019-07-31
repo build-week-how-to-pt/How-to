@@ -340,26 +340,30 @@ body .howToContainer .howToFlex {
 body .howToContainer .howToFlex .leftColumn {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 25%;
+  height: 850px;
   margin-right: 5%;
 }
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex .leftColumn {
     width: 85%;
     margin-right: 0%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .leftColumn {
     margin: 0 auto;
     width: 75%;
+    height: 100%;
   }
 }
 body .howToContainer .howToFlex .leftColumn img {
   margin-top: 5%;
-  width: 75%;
+  width: 80%;
+  height: 25%;
   border-radius: 25px;
 }
 @media screen and (max-width: 800px) {
@@ -375,6 +379,7 @@ body .howToContainer .howToFlex .leftColumn img {
 body .howToContainer .howToFlex .leftColumn button {
   margin-top: 2%;
   margin-bottom: 2%;
+  height: 7%;
   width: 75%;
   font-size: 1.5rem;
   border-radius: 5px;
@@ -383,12 +388,17 @@ body .howToContainer .howToFlex .leftColumn button {
   background-color: #0090c5;
   padding: 2.5%;
   border: none;
-  height: 100px;
+}
+@media screen and (max-width: 800px) {
+  body .howToContainer .howToFlex .leftColumn button {
+    margin: 7% 0% 7% 0%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .leftColumn button {
     margin-left: 0%;
-    padding: 0%;
+    display: none;
   }
 }
 body .howToContainer .howToFlex .leftColumn .centerText {
@@ -420,7 +430,7 @@ body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
 }
 @media screen and (max-width: 1200px) {
   body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
-    height: 80%;
+    height: 12em;
   }
 }
 body .howToContainer .howToFlex .leftColumn .centerText h2 {
@@ -450,9 +460,18 @@ body .howToContainer .howToFlex .rightColumn {
 body .howToContainer .howToFlex .rightColumn h1 {
   color: #444;
 }
+@media screen and (max-width: 800px) {
+  body .howToContainer .howToFlex .rightColumn h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5%;
+  }
+}
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .rightColumn h1 {
     text-align: center;
+    font-size: 3rem;
+    margin-top: 5%;
   }
 }
 body .howToContainer .howToFlex .rightColumn p {
@@ -462,7 +481,7 @@ body .howToContainer .howToFlex .rightColumn p {
 }
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .rightColumn p {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 body .howToContainer .howToFlex .rightColumn p .boldFont {
@@ -475,5 +494,6 @@ body .howToContainer .howToFlex .rightColumn h2 {
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .rightColumn h2 {
     text-align: center;
+    font-size: 3rem;
   }
 }
