@@ -342,7 +342,7 @@ body .howToContainer .howToFlex .leftColumn {
   flex-flow: row wrap;
   justify-content: none;
   align-items: none;
-  width: 35%;
+  width: 25%;
 }
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex .leftColumn {
@@ -381,6 +381,7 @@ body .howToContainer .howToFlex .leftColumn button {
   background-color: #0090c5;
   padding: 2.5%;
   border: none;
+  height: 100px;
 }
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex .leftColumn button {
@@ -390,6 +391,7 @@ body .howToContainer .howToFlex .leftColumn button {
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .leftColumn button {
     margin-left: 0%;
+    padding: 0%;
   }
 }
 body .howToContainer .howToFlex .leftColumn .centerText {
