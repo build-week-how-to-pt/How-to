@@ -341,6 +341,11 @@ footer {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .more {
+    padding: 0 0 50px 0;
+  }
+}
 .right {
   padding: 50px 50px 0 50px;
   width: 35%;
