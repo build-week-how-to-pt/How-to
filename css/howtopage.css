@@ -455,8 +455,8 @@ body .howToContainer .howToFlex .rightColumn h1 {
   }
 }
 body .howToContainer .howToFlex .rightColumn p {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 4rem;
   margin: 3% 0 0% 0%;
 }
 @media screen and (max-width: 600px) {
