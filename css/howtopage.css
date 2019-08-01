@@ -321,7 +321,7 @@ body .howToContainer .howToFlex {
   margin: 0% 5% 0% 5%;
   padding: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex {
     display: flex;
     flex-flow: column nowrap;
@@ -346,7 +346,7 @@ body .howToContainer .howToFlex .leftColumn {
   height: 850px;
   margin-right: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .leftColumn {
     width: 85%;
     margin-right: 0%;
@@ -366,7 +366,7 @@ body .howToContainer .howToFlex .leftColumn img {
   height: 25%;
   border-radius: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .leftColumn img {
     width: 100%;
   }
@@ -389,7 +389,7 @@ body .howToContainer .howToFlex .leftColumn button {
   padding: 2.5%;
   border: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .leftColumn button {
     margin: 7% 0% 7% 0%;
     width: 100%;
@@ -404,7 +404,7 @@ body .howToContainer .howToFlex .leftColumn button {
 body .howToContainer .howToFlex .leftColumn .centerText {
   text-align: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .leftColumn .centerText {
     display: none;
     margin-right: 0%;
@@ -452,15 +452,16 @@ body .howToContainer .howToFlex .rightColumn {
   width: 60%;
   margin-top: 1.5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .rightColumn {
     width: 95%;
   }
 }
 body .howToContainer .howToFlex .rightColumn h1 {
+  margin-bottom: 2%;
   color: #444;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body .howToContainer .howToFlex .rightColumn h1 {
     text-align: center;
     font-size: 3.75rem;
@@ -495,6 +496,11 @@ body .howToContainer .howToFlex .rightColumn .ingredientsNeeded {
   align-items: none;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  body .howToContainer .howToFlex .rightColumn .ingredientsNeeded {
+    border-bottom: solid 1px lightgray;
+  }
+}
 body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button {
   background: white;
   text-decoration: none;
@@ -508,6 +514,6 @@ body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button h2 {
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

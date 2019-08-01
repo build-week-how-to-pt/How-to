@@ -11,7 +11,7 @@ body{
             .flexBoxCentered(row nowrap ,none, none);
             margin: 0% 5% 0% 5%;
             padding: 5%;
-            @media screen and(max-width:800px){
+            @media screen and(max-width:900px){
                 
                 .flexBoxCentered(column nowrap,center, center);
                 width: 100%;
@@ -29,7 +29,7 @@ body{
                 width: 25%;
                 height: 850px;
                 margin-right: 5%;
-                @media screen and(max-width:800px){
+                @media screen and(max-width:900px){
                     width: 85%;
                     margin-right: 0%;
                     height: 100%;
@@ -45,7 +45,7 @@ body{
                     width: 80%;
                     height: 25%;
                     border-radius: 25px;
-                    @media screen and(max-width:800px){
+                    @media screen and(max-width:900px){
                         width:100%;
                     }
                     @media screen and(max-width:600px){
@@ -64,7 +64,7 @@ body{
                     background-color:#0090c5; 
                     padding: 2.5%;
                     border: none;
-                    @media screen and(max-width:800px){
+                    @media screen and(max-width:900px){
                         margin: 7% 0% 7% 0%;
                         width: 100%;
                     }
@@ -76,7 +76,7 @@ body{
                 .centerText{
                     text-align: center;
 
-                    @media screen and(max-width:800px){
+                    @media screen and(max-width:900px){
                         display: none;
                         margin-right: 0%;
                     }
@@ -120,12 +120,13 @@ body{
                 width: 60%;
                 margin-top: 1.5%;
                 
-                @media screen and(max-width:800px){
+                @media screen and(max-width:900px){
                     width: 95%;
                 }
                 
                 h1{
-                    @media screen and(max-width:800px){
+                    margin-bottom: 2%;
+                    @media screen and(max-width:900px){
                         text-align: center;
                         font-size: 3.75rem;
                         margin-top: 5%;
@@ -154,13 +155,14 @@ body{
                 .ingredientsNeeded{
                     .flexBoxCentered(row nowrap,space-evenly,none);
                     width: 100%;
-
+                    @media screen and(max-width:600px){
+                        border-bottom: solid 1px lightgray;
+                    }
                     button{
                         
                         background: white;
                         text-decoration: none;
                         border: none;
-                       
 
                         h2{
                             color:#444;
@@ -168,7 +170,7 @@ body{
                             font-size: 2.5rem;
                             @media screen and(max-width:600px){
                                 text-align: center;
-                                font-size: 3rem;
+                                font-size: 2.5rem;
                             }
                         }
                     }
