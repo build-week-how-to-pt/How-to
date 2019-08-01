@@ -151,7 +151,6 @@ h4 {
 }
 body {
   background-color: gainsboro;
-  background-image: url(@{background-img});
 }
 .home .top-home {
   display: flex;
@@ -226,10 +225,14 @@ body {
   margin: 20px 0;
   font-size: 1.55vw;
 }
+@media (max-width: 950px) {
+  .home .top-main .top-content p {
+    font-size: 1.6rem;
+  }
+}
 @media (max-width: 800px) {
   .home .top-main .top-content p {
     width: 90%;
-    font-size: 1.6rem;
   }
 }
 .home .top-main .top-content p span {
