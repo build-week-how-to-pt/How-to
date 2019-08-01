@@ -57,25 +57,27 @@
         <p>"This was my grandmother's apple pie recipe. I have never seen another one quite like it. It will always be
           my favorite and has won me several first place prizes in local competitions. I hope it becomes one of your
           favorites as well!"</p>
-          <div class="ingredientsNeeded">
-            <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
-                onclick="hideIngredients()">
-                <h2>Instructions</h2>
-            </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()"
-                id="igButton">
-                <h2>Ingredients</h2>
-            </button>
+        <div class="ingredientsNeeded">
+          <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
+            onclick="hideIngredients()">
+            <h2>Instructions</h2>
+          </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()" id="igButton">
+            <h2>Ingredients</h2>
+          </button>
         </div>
         <div class="instructionList">
-        <p><span class="boldFont">1) </span>Preheat oven to 425 degrees fahrenheit. Melt the butter in a saucepan. Stir in flour to form a
-          paste. Add water, white sugar and brown sugar, and bring to a boil. Reduce temperature and let simmer.</p>
-        <p><span class="boldFont">2) </span> Place the bottom crust in your pan. Fill with apples, mounded slightly. Cover with a lattice work crust.
-          Gently pour the sugar and butter liquid over the crust. Pour slowly so that it does not run off.</p>
-        <p><span class="boldFont">3) </span> Bake 15 minutes in the preheated oven. Reduce the temperature to 350 degrees fahrenheit. Continue
-          baking for 35 to 45 minutes, until apples are soft.
-        </p>
-        <p><span class="boldFont">4) </span> Let the pie cool off. It usually takes 30 minutes for this process.
-        </p>
+          <p><span class="boldFont">1) </span>Preheat oven to 425 degrees fahrenheit. Melt the butter in a saucepan.
+            Stir in flour to form a
+            paste. Add water, white sugar and brown sugar, and bring to a boil. Reduce temperature and let simmer.</p>
+          <p><span class="boldFont">2) </span> Place the bottom crust in your pan. Fill with apples, mounded slightly.
+            Cover with a lattice work crust.
+            Gently pour the sugar and butter liquid over the crust. Pour slowly so that it does not run off.</p>
+          <p><span class="boldFont">3) </span> Bake 15 minutes in the preheated oven. Reduce the temperature to 350
+            degrees fahrenheit. Continue
+            baking for 35 to 45 minutes, until apples are soft.
+          </p>
+          <p><span class="boldFont">4) </span> Let the pie cool off. It usually takes 30 minutes for this process.
+          </p>
         </div>
         <div class="ingredientList" style="display: none; text-align: center; margin-top: 2.5%;">
           <h2>Dough</h2>
@@ -115,7 +117,7 @@
           <p>
             1 large egg, lightly beaten
           </p>
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -179,15 +181,15 @@
 </html>
 <script>
   function hideInstructions() {
-      $('#instructionButton').css('text-decoration', 'none');
-      $('#ingredientButton').css('text-decoration', 'underline');
-      $('.instructionList').css('display', 'none');
-      $('.ingredientList').css('display', 'block');
+    $('#instructionButton').css('text-decoration', 'none');
+    $('#ingredientButton').css('text-decoration', 'underline');
+    $('.instructionList').css('display', 'none');
+    $('.ingredientList').css('display', 'block');
   }
   function hideIngredients() {
-      $('#ingredientButton').css('text-decoration', 'none');
-      $('#instructionButton').css('text-decoration', 'underline');
-      $('.ingredientList').css('display', 'none');
-      $('.instructionList').css('display', 'block');
+    $('#ingredientButton').css('text-decoration', 'none');
+    $('#instructionButton').css('text-decoration', 'underline');
+    $('.ingredientList').css('display', 'none');
+    $('.instructionList').css('display', 'block');
   }
 </script>
