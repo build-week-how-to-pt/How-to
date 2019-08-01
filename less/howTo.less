@@ -3,7 +3,7 @@ body{
     background-color:#E9e9e9;
     font-family: 'Open Sans', sans-serif;
     color: #696969;
-    
+
     .howToContainer{
 
         .widthHeight(100%, 100%);
@@ -58,11 +58,11 @@ body{
                     @media screen and(max-width:600px){
                         width:75%;
                     }
+
                 }
                 button{
 
-                    margin-top: 2%;
-                    margin-bottom: 2%;
+                    margin: 2% 0% 2% 0%;
                     .widthHeight(75%, 7%);
                     font-size: 1.5rem;
                     border-radius: 5px;
@@ -81,7 +81,9 @@ body{
                         margin-left: 0%;
                         display: none;
                     }
+
                 }
+
                 .centerText{
                     text-align: center;
 
@@ -91,6 +93,7 @@ body{
                     }
                     
                     .howToPictures{
+
                         .flexBoxCentered(row wrap,center,center);
 
                             @media screen and(max-width:600px){
@@ -109,22 +112,23 @@ body{
                             }
                         }   
 
-                        h2{
-                            color:#444;
-                            margin-top: 2%;
-                            margin-bottom: 7.5%;
-                        }
+                    h2{
+                        color:#444;
+                        margin-top: 2%;
+                        margin-bottom: 7.5%;
+                    }
 
-                        a{
-                            color:#0090c5;
-                            text-decoration: underline;
-                            line-height: 2rem;
-                            font-size: 1rem;
-                        }
+                    a{
+                        color:#0090c5;
+                        text-decoration: underline;
+                        line-height: 2rem;
+                        font-size: 1rem;
+                    }
                 }
             }
 
             .rightColumn{
+
                 .flexBoxCentered(column wrap,none,none);
                 width: 60%;
                 margin-top: 1.5%;
@@ -135,6 +139,7 @@ body{
                 
                 h1{
                     margin-bottom: 2%;
+                    color:#444;
 
                     @media screen and(max-width:900px){
                         text-align: center;
@@ -147,32 +152,39 @@ body{
                         font-size: 3rem;
                         margin-top: 5%;
                     }
-                    color:#444;
+
                 }
             
                 p{
+
                     padding: 1%;
                     font-size: 2rem;
                     line-height: 4rem;
                     margin: .5% 0 0% 0%;
+
                     @media screen and(max-width:600px){
                         font-size: 1.6rem;
                     }
+
                     .boldFont{
                         font-weight:bold;
                     }
                 }
 
                 h2{
+
                     margin-top: 2%;
                     @media screen and(max-width:900px){
                         text-align: center;
                     }
+                    
                 }
             
                 .ingredientsNeeded{
+
                     .flexBoxCentered(row nowrap,space-evenly,none);
                     width: 100%;
+                    
                     @media screen and(max-width:600px){
                         border-bottom: solid 1px lightgray;
                     }
