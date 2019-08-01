@@ -60,9 +60,9 @@
         <div class="ingredientsNeeded">
           <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
             onclick="hideIngredients()">
-            <h2>Instructions</h2>
+            <h2 id="instructionsID">Instructions</h2>
           </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()" id="igButton">
-            <h2>Ingredients</h2>
+            <h2 id="ingredientsID" style="color:#a5a4a4;">Ingredients</h2>
           </button>
         </div>
         <div class="instructionList">
@@ -182,12 +182,16 @@
 <script>
   function hideInstructions() {
     $('#instructionButton').css('text-decoration', 'none');
+    $('#instructionsID').css('color', '#a5a4a4');
+    $('#ingredientsID').css('color', '#444444')
     $('#ingredientButton').css('text-decoration', 'underline');
     $('.instructionList').css('display', 'none');
     $('.ingredientList').css('display', 'block');
   }
   function hideIngredients() {
     $('#ingredientButton').css('text-decoration', 'none');
+    $('#instructionsID').css('color', '#444444');
+    $('#ingredientsID').css('color', '#a5a4a4');
     $('#instructionButton').css('text-decoration', 'underline');
     $('.ingredientList').css('display', 'none');
     $('.instructionList').css('display', 'block');

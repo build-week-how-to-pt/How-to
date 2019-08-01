@@ -56,15 +56,14 @@
                 <p>Every single Sunday begins with pancakes… and ends with leftover pancakes from the morning. These are
                     everything you want in a pancake. They’re soft and so fluffy… each mouthful melts in your mouth…
                     you’ll be reaching for more than one. Stack. Possibly.</p>
-                <div class="ingredientsNeeded">
-                    <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
-                        onclick="hideIngredients()">
-                        <h2>Instructions</h2>
-                    </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()"
-                        id="igButton">
-                        <h2>Ingredients</h2>
-                    </button>
-                </div>
+                    <div class="ingredientsNeeded">
+                        <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
+                          onclick="hideIngredients()">
+                          <h2 id="instructionsID">Instructions</h2>
+                        </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()" id="igButton">
+                          <h2 id="ingredientsID" style="color:#a5a4a4;">Ingredients</h2>
+                        </button>
+                      </div>
                 <div class="instructionList">
                     <p><span class="boldFont">1)</span> Combine together the flour, sugar (or sweetener), baking powder,
                         baking soda and salt in a
@@ -181,12 +180,16 @@
 <script>
     function hideInstructions() {
         $('#instructionButton').css('text-decoration', 'none');
+        $('#instructionsID').css('color', '#a5a4a4');
+        $('#ingredientsID').css('color', '#444444')
         $('#ingredientButton').css('text-decoration', 'underline');
         $('.instructionList').css('display', 'none');
         $('.ingredientList').css('display', 'block');
     }
     function hideIngredients() {
         $('#ingredientButton').css('text-decoration', 'none');
+        $('#instructionsID').css('color', '#444444');
+        $('#ingredientsID').css('color', '#a5a4a4');
         $('#instructionButton').css('text-decoration', 'underline');
         $('.ingredientList').css('display', 'none');
         $('.instructionList').css('display', 'block');
