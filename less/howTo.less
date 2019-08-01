@@ -1,34 +1,69 @@
 body{
+
     background-color:#E9e9e9;
     font-family: 'Open Sans', sans-serif;
     color: #696969;
+
     .howToContainer{
-        margin: 15% 0% 15% 0%;
-        width: 100%;
-        height: 100%;
+
+        .widthHeight(100%, 100%);
         background-color: #fff;
 
         .howToFlex{
-            display:flex;
-            margin: 0% 7% 0% 7%;
-            flex-flow: row nowrap;
+
+            .flexBoxCentered(row nowrap ,none, none);
+            margin: 0% 5% 0% 5%;
             padding: 5%;
 
+            @media screen and(max-width:900px){
+                
+                .flexBoxCentered(column nowrap,center, center);
+                width: 100%;
+                margin-left: 2.5%;
+
+            }
+
+            @media screen and(max-width:600px){
+                flex-flow:column nowrap;
+                width: 100%;
+            }
+
+
             .leftColumn{
-                display: flex;
-                flex-flow: column nowrap;
-                width: 35%;
-                height: 100%;
+
+                .flexBoxCentered(row wrap,space-around, center);
+                .widthHeight(30%, 850px);
+                margin-right: 5%;
+
+                @media screen and(max-width:900px){
+                    .widthHeight(85%, 100%);
+                    margin-right: 0%;
+                }
+
+                @media screen and(max-width:600px){
+                    margin: 0 auto;
+                    .widthHeight(75%, 100%);
+                }
 
                 img{
+
+                    .widthHeight(80%, 25%);
                     margin-top: 5%;
-                    width: 75%;
                     border-radius: 25px;
+
+                    @media screen and(max-width:900px){
+                        width:100%;
+                    }
+
+                    @media screen and(max-width:600px){
+                        width:75%;
+                    }
+
                 }
                 button{
-                    margin-top: 10%;
-                    margin-bottom: 7%;
-                    width: 75%;
+
+                    .widthHeight(75%, 7%);
+                    margin: 2% 0% 2% 0%;
                     font-size: 1.5rem;
                     border-radius: 5px;
                     font-weight: bold;
@@ -36,56 +71,143 @@ body{
                     background-color:#0090c5; 
                     padding: 2.5%;
                     border: none;
-                }                
+
+                    @media screen and(max-width:900px){
+                        margin: 7% 0% 7% 0%;
+                        width: 100%;
+                    }
+
+                    @media screen and(max-width:600px){
+                        margin-left: 0%;
+                        display: none;
+                    }
+
+                }
+
                 .centerText{
                     text-align: center;
-                    margin-right: 25%;
+
+                    @media screen and(max-width:900px){
+                        display: none;
+                        margin-right: 0%;
+                    }
                     
                     .howToPictures{
-                            display: flex;
-                            flex-flow: row wrap;
-                            a{
-                                width: 49%;
 
-                                img{
-                                    width: 90%;
-                                    height: 150px;
-                                }
+                        .flexBoxCentered(row wrap,center,center);
+                            margin-top: 5%;
+                            @media screen and(max-width:600px){
+                                display: none;
                             }
 
+                            a{
+
+                                width: 49%;
+                                img{
+                                    .widthHeight(90%, 16em);
+                                    @media screen and(max-width:1200px){
+                                        height: 12em;
+                                    }
+                                }
+                            }
                         }   
 
-                    
-                        h2{
-                            color:#444;
-                            margin-top: 2%;
-                            margin-bottom: 7.5%;
-                        }
-                        a{
-                            color:#0090c5;
-                            text-decoration: underline;
-                            line-height: 2rem;
-                            font-size: 1rem;
-                        }
+                    h2{
+                        color:#444;
+                        margin-top: 2% 0% 7.5% 0%;
+                    }
+
+                    a{
+                        color:#0090c5;
+                        text-decoration: underline;
+                        line-height: 2rem;
+                        font-size: 1rem;
+                    }
                 }
             }
 
             .rightColumn{
-                display: flex;
-                flex-flow: column nowrap;
+
+                .flexBoxCentered(column wrap,none,none);
                 width: 60%;
+                margin-top: 1.5%;
+                
+                @media screen and(max-width:900px){
+                    width: 95%;
+                }
                 
                 h1{
+                    margin-bottom: 2%;
                     color:#444;
+
+                    @media screen and(max-width:900px){
+                        text-align: center;
+                        font-size: 3.75rem;
+                        margin-top: 5%;
+                    }
+
+                    @media screen and(max-width:600px){
+                        text-align: center;
+                        font-size: 3rem;
+                        margin-top: 5%;
+                    }
+
                 }
+            
                 p{
-                    font-size: 1.2rem;
-                    line-height: 2rem;
-                    margin: 3% 0 0% 0%;
+
+                    padding: 1%;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                    margin: .5% 0 0% 0%;
+
+                    @media screen and(max-width:600px){
+                        font-size: 1.6rem;
+                    }
+
+                    .boldFont{
+                        font-weight:bold;
+                    }
                 }
+
                 h2{
-                    color:#444;
-                    margin: 4% 0% 2% 0%;
+
+                    margin-top: 2%;
+
+                    @media screen and(max-width:900px){
+                        text-align: center;
+                    }
+                    
+                }
+            
+                .ingredientsNeeded{
+
+                    .flexBoxCentered(row nowrap,space-evenly,none);
+                    width: 100%;
+
+                    @media screen and(max-width:600px){
+                        border-bottom: solid 1px lightgray;
+                    }
+
+                    button{
+                        
+                        background: white;
+                        text-decoration: none;
+                        border: none;
+
+                        h2{
+
+                            text-align: center;
+                            color:#444;
+                            margin: 4% 0% 2% 0%;
+                            font-size: 2.5rem;
+                            
+                            @media screen and(max-width:600px){
+                                text-align: center;
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }  
                 }
             }
         }

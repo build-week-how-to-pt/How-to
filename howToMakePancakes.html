@@ -8,7 +8,7 @@
     <title></title>
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
-    <link href="css/howTo.css" rel="stylesheet">
+    <link href="css/howtopage.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/985203017d.js"></script>
     <script src="scripts.js"></script>
     <!--jQuery -->
@@ -23,6 +23,15 @@
 </head>
 
 <body>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <h1 class="logo">How-To</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="index.html">About Us</a>
+            </nav>
+        </div>
+    </section>
     <div class="howToContainer">
         <div class="howToFlex">
             <div class="leftColumn">
@@ -47,24 +56,66 @@
                 <p>Every single Sunday begins with pancakes… and ends with leftover pancakes from the morning. These are
                     everything you want in a pancake. They’re soft and so fluffy… each mouthful melts in your mouth…
                     you’ll be reaching for more than one. Stack. Possibly.</p>
-                <h2>Instructions</h2>
-                <p>1) Combine together the flour, sugar (or sweetener), baking powder, baking soda and salt in a
-                    large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter, vanilla
-                    and egg.</p>
-                <p>2) Use a wire whisk to whisk the wet ingredients together first before slowly folding them into the
-                    dry ingredients. Mix together until smooth (there may be a couple of lumps but that's okay).</p>
-                <p>3) Set the batter aside and allow to rest while heating up your pan or griddle. </p>
-                <p>4) Heat a nonstick pan or griddle over low-medium heat and wipe over with a little butter to lightly
-                    grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the back
-                    of your ladle or measuring cup.
-                </p>
-                <p>
-                    5) When the underside is golden and bubbles begin to appear on the surface, flip with a spatula and
-                    cook until golden. Repeat with remaining batter.
-                </p>
-                <p>
-                    6) Serve with honey, maple syrup, fruit, ice cream or frozen yoghurt, or enjoy plain!
-                </p>
+                <div class="ingredientsNeeded">
+                    <button class="ingredientsSwitch" style="text-decoration: underline;" id="instructionButton"
+                        onclick="hideIngredients()">
+                        <h2>Instructions</h2>
+                    </button> <button class="ingredientsSwitch" id="ingredientButton" onclick="hideInstructions()"
+                        id="igButton">
+                        <h2>Ingredients</h2>
+                    </button>
+                </div>
+                <div class="instructionList">
+                    <p><span class="boldFont">1)</span> Combine together the flour, sugar (or sweetener), baking powder,
+                        baking soda and salt in a
+                        large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter,
+                        vanilla
+                        and egg.</p>
+                    <p><span class="boldFont">2)</span> Use a wire whisk to whisk the wet ingredients together first
+                        before
+                        slowly folding them into the
+                        dry ingredients. Mix together until smooth (there may be a couple of lumps but that's okay).</p>
+                    <p><span class="boldFont">3)</span> Set the batter aside and allow to rest while heating up your pan
+                        or
+                        griddle. </p>
+                    <p><span class="boldFont">4)</span> Heat a nonstick pan or griddle over low-medium heat and wipe
+                        over
+                        with a little butter to lightly
+                        grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the
+                        back
+                        of your ladle or measuring cup.
+                    </p>
+                    <p>
+                        <span class="boldFont">5)</span> When the underside is golden and bubbles begin to appear on the
+                        surface, flip with a spatula and
+                        cook until golden. Repeat with remaining batter.
+                    </p>
+                    <p>
+                        <span class="boldFont">6)</span> Serve with honey, maple syrup, fruit, ice cream or frozen
+                        yoghurt,
+                        or enjoy plain!
+                    </p>
+                </div>
+                <div class="ingredientList" style="display: none; text-align: center; margin-top: 5%;">
+
+                    <p>
+                        1 1/2 cups all-purpose flour
+                    </p>
+
+                    <p>
+                        3 1/2 teaspoons baking powder
+                    </p>
+                    <p>
+                        1 1/4 cups milk
+                    </p>
+                    <p>
+                        1 egg
+                    </p>
+                    <p>
+                        3 tablespoons butter, melted
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -80,6 +131,64 @@
     <div id="ex4" class="modal">
         <img style="width: 95%; height: 350px; border-radius: 25px;margin-left: 2.5%;" src="images/pancakes4.jpg">
     </div>
+    <footer>
+        <section class="footer-content">
+            <div class="foot hide">
+                <h2>More How-to</h2>
+                <ul>
+                    <li><a href="howToMakePancakes.html">How To Make Pancakes</a></li>
+                    <li><a href="howToApplePie.html">How To Make Apple Pie</a></li>
+                    <li><a href="howToSaveMoney.html">How To Save Money</a></li>
+                </ul>
+            </div>
+            <div class="foot hide">
+                <h2>Become a member</h2>
+                <ul>
+                    <li><a href="#">Click here to become a member</a></li>
+                    <li><a href="#">click here to sign in</a></li>
+                    <li><a href="#">click here to register</a></li>
+                </ul>
+            </div>
+            <div class="foot hide">
+                <h2>Create a How-To</h2>
+                <ul>
+                    <li><a href="#">How to add an How-to</a></li>
+                    <li><a href="#">How to share an How-to</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <div>
+                    <h2>Contact Us</h2>
+                    <ul class="contact-icons">
+                        <li><a href="#"><img class="icons" src="img/fbook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img class="icons" src="img/insta.png" alt="instagram"></a></li>
+                        <li><a href="#"><img class="icons" src="img/pin.png" alt="pint"></a></li>
+                        <li><a href="#"><img class="icons" src="img/twit.png" alt="twitter"></a></li>
+                    </ul> <br>
+                </div>
+                <p>123 main street <br> Greenville, New Jeresy 08859 <br> (855) 569-9658</p>
+            </div>
+        </section>
+        <br>
+        <div>
+            <p class="copy">© Copyright. All rights reserved 2019</p>
+
+    </footer>
 </body>
 
 </html>
+
+<script>
+    function hideInstructions() {
+        $('#instructionButton').css('text-decoration', 'none');
+        $('#ingredientButton').css('text-decoration', 'underline');
+        $('.instructionList').css('display', 'none');
+        $('.ingredientList').css('display', 'block');
+    }
+    function hideIngredients() {
+        $('#ingredientButton').css('text-decoration', 'none');
+        $('#instructionButton').css('text-decoration', 'underline');
+        $('.ingredientList').css('display', 'none');
+        $('.instructionList').css('display', 'block');
+    }
+</script>
