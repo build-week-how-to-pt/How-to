@@ -489,6 +489,14 @@ body .howToContainer .howToFlex .rightColumn p {
 body .howToContainer .howToFlex .rightColumn p .boldFont {
   font-weight: bold;
 }
+body .howToContainer .howToFlex .rightColumn h2 {
+  margin-top: 2%;
+}
+@media screen and (max-width: 900px) {
+  body .howToContainer .howToFlex .rightColumn h2 {
+    text-align: center;
+  }
+}
 body .howToContainer .howToFlex .rightColumn .ingredientsNeeded {
   display: flex;
   flex-flow: row nowrap;
@@ -507,6 +515,7 @@ body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button {
   border: none;
 }
 body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button h2 {
+  text-align: center;
   color: #444;
   margin: 4% 0% 2% 0%;
   font-size: 2.5rem;
