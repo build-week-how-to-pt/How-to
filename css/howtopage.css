@@ -463,7 +463,7 @@ body .howToContainer .howToFlex .rightColumn h1 {
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex .rightColumn h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.75rem;
     margin-top: 5%;
   }
 }
@@ -475,9 +475,10 @@ body .howToContainer .howToFlex .rightColumn h1 {
   }
 }
 body .howToContainer .howToFlex .rightColumn p {
+  padding: 1%;
   font-size: 2rem;
   line-height: 4rem;
-  margin: 3% 0 0% 0%;
+  margin: 0.5% 0 0% 0%;
 }
 @media screen and (max-width: 600px) {
   body .howToContainer .howToFlex .rightColumn p {
@@ -487,12 +488,25 @@ body .howToContainer .howToFlex .rightColumn p {
 body .howToContainer .howToFlex .rightColumn p .boldFont {
   font-weight: bold;
 }
-body .howToContainer .howToFlex .rightColumn h2 {
+body .howToContainer .howToFlex .rightColumn .ingredientsNeeded {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: none;
+  width: 100%;
+}
+body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button {
+  background: white;
+  text-decoration: none;
+  border: none;
+}
+body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button h2 {
   color: #444;
   margin: 4% 0% 2% 0%;
+  font-size: 2.5rem;
 }
 @media screen and (max-width: 600px) {
-  body .howToContainer .howToFlex .rightColumn h2 {
+  body .howToContainer .howToFlex .rightColumn .ingredientsNeeded button h2 {
     text-align: center;
     font-size: 3rem;
   }

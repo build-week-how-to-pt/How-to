@@ -119,7 +119,7 @@ body{
                 .flexBoxCentered(column wrap,none,none);
                 width: 60%;
                 margin-top: 1.5%;
-
+                
                 @media screen and(max-width:800px){
                     width: 95%;
                 }
@@ -127,7 +127,7 @@ body{
                 h1{
                     @media screen and(max-width:800px){
                         text-align: center;
-                        font-size: 4rem;
+                        font-size: 3.75rem;
                         margin-top: 5%;
                     }
                     @media screen and(max-width:600px){
@@ -137,10 +137,12 @@ body{
                     }
                     color:#444;
                 }
+            
                 p{
+                    padding: 1%;
                     font-size: 2rem;
                     line-height: 4rem;
-                    margin: 3% 0 0% 0%;
+                    margin: .5% 0 0% 0%;
                     @media screen and(max-width:600px){
                         font-size: 1.6rem;
                     }
@@ -148,14 +150,31 @@ body{
                         font-weight:bold;
                     }
                 }
-                h2{
-                    color:#444;
-                    margin: 4% 0% 2% 0%;
-                    @media screen and(max-width:600px){
-                        text-align: center;
-                        font-size: 3rem;
+            
+                .ingredientsNeeded{
+                    .flexBoxCentered(row nowrap,space-evenly,none);
+                    width: 100%;
+
+                    button{
+                        
+                        background: white;
+                        text-decoration: none;
+                        border: none;
+                       
+
+                        h2{
+                            color:#444;
+                            margin: 4% 0% 2% 0%;
+                            font-size: 2.5rem;
+                            @media screen and(max-width:600px){
+                                text-align: center;
+                                font-size: 3rem;
+                            }
+                        }
                     }
+                    
                 }
+
             }
         }
     }
