@@ -1,20 +1,64 @@
-.home {
+body {
 
     footer {
+        width: 100%;
         background-color: white;
         margin-top: 20px;
-
+        
         .bottom-content {
-            margin: 0 20px;
-        }
+            width: 95%;
+            display: flex;
+            margin: 0 auto;
 
-        h4 {
-            font-family: cursive;
-        }
+            .other {
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
 
-        address {
-            font-size: 1.6rem;
-            
-        }
+                @media @tablet {
+                    display: none;
+                }
+
+                h2 {
+                    font-family: "Source Sans Pro", Arial;
+                    font-weight: 800;
+                    color: #444;
+                }
+
+                a {
+                    font-size: 1.6vw;
+                    margin: 5px 0;
+                }
+            }
+
+            .contact {
+                margin: 0 20px;
+                display: flex;
+                flex-flow: column;
+                // justify-items: flex-end;
+
+                h2 {
+                    font-family: "Source Sans Pro", Arial;
+                    font-weight: 800;
+                    color: #444;
+                }
+
+                .img-icon {
+                    
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        background-color: black;
+                        border-radius: 10px;
+                    }
+                }
+        
+                address {
+                    font-size: 1.6rem;
+                    
+                }
+            }
+        }      
     }
 }

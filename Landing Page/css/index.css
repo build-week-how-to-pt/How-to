@@ -160,7 +160,7 @@ body {
 }
 .home .top-home h1 {
   padding: 15px 25px;
-  background-color: hotpink;
+  background-color: #ff4486;
   border-radius: 10px;
   color: white;
   font-family: cursive;
@@ -189,17 +189,52 @@ body {
     margin-bottom: 5px;
   }
 }
-.home footer {
+body footer {
+  width: 100%;
   background-color: white;
   margin-top: 20px;
 }
-.home footer .bottom-content {
+body footer .bottom-content {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+}
+body footer .bottom-content .other {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  body footer .bottom-content .other {
+    display: none;
+  }
+}
+body footer .bottom-content .other h2 {
+  font-family: "Source Sans Pro", Arial;
+  font-weight: 800;
+  color: #444;
+}
+body footer .bottom-content .other a {
+  font-size: 1.6vw;
+  margin: 5px 0;
+}
+body footer .bottom-content .contact {
   margin: 0 20px;
+  display: flex;
+  flex-flow: column;
 }
-.home footer h4 {
-  font-family: cursive;
+body footer .bottom-content .contact h2 {
+  font-family: "Source Sans Pro", Arial;
+  font-weight: 800;
+  color: #444;
 }
-.home footer address {
+body footer .bottom-content .contact .img-icon img {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 10px;
+}
+body footer .bottom-content .contact address {
   font-size: 1.6rem;
 }
 .home .top-main {
