@@ -181,6 +181,7 @@ body {
 .home .top-home nav a {
   margin: 0 5px 0 25px;
   font-size: 2rem;
+  font-weight: 800;
   font-family: "Source Sans Pro", Arial;
   text-decoration: none;
   color: #696969;
@@ -188,12 +189,17 @@ body {
   border-radius: 18px;
 }
 .home .top-home nav a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 @media (max-width: 840px) {
   .home .top-home nav a {
     margin: 0 0 5px 10px;
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-home nav a {
+    font-size: 1.3rem;
   }
 }
 body footer {
