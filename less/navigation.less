@@ -3,8 +3,9 @@
     height: 15em;
     border-bottom: .3em solid @gray;
     display: flex;
-
-    
+    @media @phone {       
+        width: 100%        
+      }    
     
     .nav-container {
         .justifyAlign(center, center);       
@@ -12,9 +13,10 @@
 
         @media @phone {
             display: flex;
+            flex-direction: column;
             align-content: center;
             align-items: center;
-            width: 100%
+            width: 100%;
             
           }
           
@@ -51,6 +53,12 @@
             text-decoration: none;
             border-radius: 6px;
             padding: 0.5em 1em 0.5em 1em;
+            @media @phone {               
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                
+              }
 
             
                 
