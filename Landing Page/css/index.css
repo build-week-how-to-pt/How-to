@@ -155,7 +155,7 @@ body {
 .home .top-home {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 30px;
 }
 .home .top-home h1 {
@@ -163,30 +163,36 @@ body {
   background-color: #ff4486;
   border-radius: 10px;
   color: white;
-  font-family: cursive;
+  font-family: 'Oleo Script', serif;
+}
+.home .top-home nav {
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.home .top-home nav:hover {
+  background-color: white;
+  transition: 0.5s;
 }
 @media (max-width: 840px) {
   .home .top-home nav {
     display: flex;
-    flex-direction: column;
   }
 }
 .home .top-home nav a {
   margin: 0 5px 0 25px;
   font-size: 2rem;
-  font-family: cursive;
+  font-family: "Source Sans Pro", Arial;
   text-decoration: none;
-  color: white;
+  color: #696969;
   padding: 2px 8px;
   border-radius: 18px;
-  background-color: lightslategray;
 }
 .home .top-home nav a:hover {
   opacity: 0.5;
 }
 @media (max-width: 840px) {
   .home .top-home nav a {
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
 }
 body footer {
@@ -195,14 +201,15 @@ body footer {
   margin-top: 20px;
 }
 body footer .bottom-content {
-  width: 95%;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  padding: 20px 0 50px 0;
 }
 body footer .bottom-content .other {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   body footer .bottom-content .other {
@@ -215,15 +222,29 @@ body footer .bottom-content .other h2 {
   color: #444;
 }
 body footer .bottom-content .other a {
-  font-size: 1.6vw;
+  font-size: 2rem;
   margin: 5px 0;
+}
+body footer .bottom-content .member {
+  display: flex;
+  flex-flow: column;
+}
+@media (max-width: 500px) {
+  body footer .bottom-content .member {
+    display: none;
+  }
 }
 body footer .bottom-content .contact {
   margin: 0 20px;
   display: flex;
   flex-flow: column;
 }
-body footer .bottom-content .contact h2 {
+@media (max-width: 500px) {
+  body footer .bottom-content .contact {
+    flex-flow: row;
+  }
+}
+body footer .bottom-content .contact .img-icon h2 {
   font-family: "Source Sans Pro", Arial;
   font-weight: 800;
   color: #444;
@@ -234,8 +255,21 @@ body footer .bottom-content .contact .img-icon img {
   background-color: black;
   border-radius: 10px;
 }
-body footer .bottom-content .contact address {
+body footer .bottom-content .contact p {
   font-size: 1.6rem;
+  line-height: 2.25;
+  color: #696969;
+}
+@media (max-width: 500px) {
+  body footer .bottom-content .contact p {
+    margin-left: 10px;
+  }
+}
+body footer #copy {
+  text-align: center;
+  font-size: 2rem;
+  color: #696969;
+  padding-bottom: 10px;
 }
 .home .top-main {
   background-color: white;
@@ -272,7 +306,7 @@ body footer .bottom-content .contact address {
 }
 .home .top-main .top-content p span {
   font-size: 2.8vw;
-  font-family: cursive;
+  font-family: "Source Sans Pro", Arial;
 }
 @media (max-width: 800px) {
   .home .top-main .top-content p span {

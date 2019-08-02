@@ -6,14 +6,15 @@ body {
         margin-top: 20px;
         
         .bottom-content {
-            width: 95%;
+            width: 100%;
             display: flex;
-            margin: 0 auto;
+            padding: 20px 0 50px 0;
 
             .other {
                 display: flex;
                 flex-direction: column;
                 margin: 10px;
+                margin: 0 auto;
 
                 @media @tablet {
                     display: none;
@@ -26,8 +27,16 @@ body {
                 }
 
                 a {
-                    font-size: 1.6vw;
+                    font-size: 2rem;
                     margin: 5px 0;
+                }
+            }
+
+            .member {
+                display: flex;
+                flex-flow: column;
+                @media @phone {
+                    display: none;
                 }
             }
 
@@ -36,15 +45,19 @@ body {
                 display: flex;
                 flex-flow: column;
                 // justify-items: flex-end;
-
-                h2 {
-                    font-family: "Source Sans Pro", Arial;
-                    font-weight: 800;
-                    color: #444;
+                @media @phone {
+                    flex-flow: row;
                 }
+
 
                 .img-icon {
                     
+
+                    h2 {
+                        font-family: "Source Sans Pro", Arial;
+                        font-weight: 800;
+                        color: #444;
+                    }
 
                     img {
                         height: 50px;
@@ -54,11 +67,21 @@ body {
                     }
                 }
         
-                address {
+                p {
                     font-size: 1.6rem;
-                    
+                    line-height: 2.25;
+                    color: #696969;
+                    @media @phone {
+                        margin-left: 10px;
+                    }
                 }
             }
-        }      
+        } 
+        #copy {
+            text-align: center;
+            font-size: 2rem;
+            color: #696969;
+            padding-bottom: 10px;
+        }   
     }
 }
