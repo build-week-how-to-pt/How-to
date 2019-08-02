@@ -193,6 +193,7 @@ body {
 @media (max-width: 840px) {
   .home .top-home nav a {
     margin: 0 0 5px 10px;
+    font-size: 1.6rem;
   }
 }
 body footer {
