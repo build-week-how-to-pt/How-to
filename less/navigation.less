@@ -5,7 +5,10 @@
     display: flex;
     @media @phone {       
         width: 100%        
-      }    
+      } 
+      @media @tablet {
+        width: 100%;    
+      }   
     
     .nav-container {
         .justifyAlign(center, center);       
@@ -19,6 +22,9 @@
             width: 100%;
             
           }
+          @media @tablet {
+            width: 100%;    
+          }   
           
 
         .logo {
@@ -56,12 +62,8 @@
             @media @phone {               
                 width: 100%;
                 margin-top: 15px;
-                margin-bottom: 30px;
-                
-              }
-
-            
-                
+                margin-bottom: 30px;                
+              }   
               }
 
             nav:hover {
