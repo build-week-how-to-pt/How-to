@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="sytlesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">  
-        <link rel="shortcut icon" type="image/png" href="img/favicon.ico">  
-        <title> How To - about Us</title>
-    </head>
-    <body>
-        <section class="nav-bar">
-            <div class="nav-container">                
-                <h1 class="logo">How-To</h1>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="About-Us.html">About Us</a>
-                    <a href="#">Trending</a>
-                </nav>            
-            </div>
-        </section>
-        <section class="container">
-            <section class="left">         
-            <h1>About Us</h1>
-            <p>Thank you for visiting the largest How-To site on the block, It's great to have you here. We pride ourselves on being the largest How-To library on the internet. Now that you're here, check out our sample How-To that we have for you today. This Web page was built by the team you see just below, you can hover your mouse over them to get to know more about them.</p>
-            <h2 class="m-team">Meet The Team</h2>            
-                <section class="team"> 
-                    <div class="one">
-                        <div class="card">
-                            <img class="picFace front" src="img/sent.png">
-                            <div class="picFace back"><h2 class="name-title">Sent dayassa</h2><p class="h2-team">Hello , my name is sent and I created the app</p></div>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <div class="card">
-                            <img class="picFace front" src="img/tavin.png">
-                            <div class="picFace back"><h2 class="name-title">Tevin Davis</h2><p class="h2-team">Hello, I'm Tevin and I built the home landing page</p></div>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <div class="card">
-                            <img class="picFace front" src="img/danny.png">
-                            <div class="picFace back"><h2 class="name-title">Danny Town</h2><p class="h2-team">Hello, I'm Danny and I built the sample how to page</p></div>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <div class="card">
-                            <img class="picFace front" src="img/darren.jpg">
-                            <div class="picFace back"><h2 class="name-title">Darren Angus</h2><p class="h2-team">My name is Darren, an I am one of the UI builder to this webpage. I help created the About Us page.</p></div>
-                        </div>
-                    </div>     
-                    <script>
-                        TweenLite.set(".one", {perspective:800});
-                        TweenLite.set(".card", {transformStyle:"preserve-3d"});
-                        TweenLite.set(".back", {rotationY:-180});
-                        TweenLite.set([".back", ".front"], {backfaceVisibility:"hidden"});
-                        $(".one").hover(
-                        function() {
-                            TweenLite.to($(this).find(".card"), 1.2, {rotationY:180, ease:Back.easeOut});
-                        },
-                        function() {
-                            TweenLite.to($(this).find(".card"), 1.2, {rotationY:0, ease:Back.easeOut});  
-                        }
-                        );
-                        //intro when pages load
-                        TweenMax.staggerTo($(".card"), 1, {rotationY:-180, repeat:1, yoyo:true}, 0.1);                        
-                    </script> 
-                </section> 
-            </section>
-            <section class="right">    
-                    <div class="sub-headers">
-                        <h2>Create your own How-to</h2>
-                        <!-- <img  class="subhead-img" src="img/diy.jpg" alt="header image"><br><br><br> -->
-                        <p>With our user friendly app that's avaiable in all country, 
-                            it's that much easier to add 
-                            your own How-to for the world to see. 
-                            You will earn popularity jsut by uploading a How-to Video. </p> <br>
-                        <button>Find out More</button> <br><br><br>
 
-                        <h2>More How-to</h2>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="sytlesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <title> How To - about Us</title>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <h1 class="logo">How-To</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="About-Us.html">About Us</a>
+                <a href="#">Trending</a>
+            </nav>
+        </div>
+    </section>
+    <section class="container">
+        <section class="left">
+            <h1>About Us</h1>
+            <p>Thank you for visiting the largest How-To site on the block, It's great to have you here. We pride
+                ourselves on being the largest How-To library on the internet. Now that you're here, check out our
+                sample How-To that we have for you today. This Web page was built by the team you see just below, you
+                can hover your mouse over them to get to know more about them.</p>
+            <h2 class="m-team">Meet The Team</h2>
+            <section class="team">
+                <div class="one">
+                    <div class="card">
+                        <img class="picFace front" src="img/sent.png">
+                        <div class="picFace back">
+                            <h2 class="name-title">Sent dayassa</h2>
+                            <p class="h2-team">Hello , my name is sent and I created the app</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="card">
+                        <img class="picFace front" src="img/tavin.png">
+                        <div class="picFace back">
+                            <h2 class="name-title">Tevin Davis</h2>
+                            <p class="h2-team">Hello, I'm Tevin and I built the home landing page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="card">
+                        <img class="picFace front" src="img/danny.png">
+                        <div class="picFace back">
+                            <h2 class="name-title">Danny Town</h2>
+                            <p class="h2-team">Hello, I'm Danny and I built the sample how to page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="card">
+                        <img class="picFace front" src="img/darren.jpg">
+                        <div class="picFace back">
+                            <h2 class="name-title">Darren Angus</h2>
+                            <p class="h2-team">My name is Darren, an I am one of the UI builder to this webpage. I help
+                                created the About Us page.</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    TweenLite.set(".one", { perspective: 800 });
+                    TweenLite.set(".card", { transformStyle: "preserve-3d" });
+                    TweenLite.set(".back", { rotationY: -180 });
+                    TweenLite.set([".back", ".front"], { backfaceVisibility: "hidden" });
+                    $(".one").hover(
+                        function () {
+                            TweenLite.to($(this).find(".card"), 1.2, { rotationY: 180, ease: Back.easeOut });
+                        },
+                        function () {
+                            TweenLite.to($(this).find(".card"), 1.2, { rotationY: 0, ease: Back.easeOut });
+                        }
+                    );
+                    //intro when pages load
+                    TweenMax.staggerTo($(".card"), 1, { rotationY: -180, repeat: 1, yoyo: true }, 0.1);                        
+                </script>
+            </section>
+        </section>
+        <section class="right">
+            <div class="sub-headers">
+                <h2>Create your own How-to</h2>
+                <!-- <img  class="subhead-img" src="img/diy.jpg" alt="header image"><br><br><br> -->
+                <p>With our user friendly app that's avaiable in all country,
+                    it's that much easier to add
+                    your own How-to for the world to see.
+                    You will earn popularity jsut by uploading a How-to Video. </p> <br>
+                <button>Find out More</button> <br><br><br>
+
+                <h2>More How-to</h2>
                 <ul class="more">
                     <li class="list"><a href="howToApplePie.html">How to make Apple Pie</a></li>
                     <li class="list"><a href="howToMakePancakes.html">How to make Pancakes</a></li>
                     <li class="list"><a href="howToSaveMoney.html">How to save money</a></li>
                     <li class="list"><a href="#">How to set up a social media profile</a></li>
                 </ul>
-                    </div>         
-            </section> 
-        </Section> 
+            </div>
+        </section>
+    </Section>
     <footer>
         <section class="footer-content">
             <div class="foot hide hides">
                 <h2>More How-to</h2>
                 <ul>
-                    <li ><a href="#">How to build a boat</a></li>
-                    <li ><a href="#">How to build a  dog house</a></li>
-                    <li><a href="#">How to use facebook</a></li>
-                    <li><a href="#">How to set up a social media profile</a></li>
+                    <li><a href="howToMakePancakes.html">How To Make Pancakes</a></li>
+                    <li><a href="howToApplePie.html">How To Make Apple Pie</a></li>
+                    <li><a href="howToSaveMoney.html">How To Save Money</a></li>
                 </ul>
             </div>
             <div class="foot hide ">
@@ -107,7 +124,7 @@
                 <ul>
                     <li><a href="#">Click here to become a member</a></li>
                     <li><a href="#">click here to sign in</a></li>
-                    <li><a href="#">click here to register</a></li>                
+                    <li><a href="#">click here to register</a></li>
                 </ul>
             </div>
             <div class="foot hide">
@@ -131,8 +148,10 @@
             </div>
         </section>
         <br>
-        <div >    <p class="copy">© Copyright. All rights reserved 2019</p>
-        
+        <div>
+            <p class="copy">© Copyright. All rights reserved 2019</p>
+
     </footer>
-    </body>    
+</body>
+
 </html>
