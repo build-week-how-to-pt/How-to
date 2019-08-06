@@ -237,7 +237,7 @@ br {
     margin-bottom: 30px;
   }
 }
-.nav-bar nav:hover {
+.nav-bar a:hover {
   background-color: white;
 }
 .nav-bar a {
